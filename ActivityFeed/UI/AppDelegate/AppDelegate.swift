@@ -12,7 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    private lazy var rootConnector = ActivityFeedConnector()
+    private lazy var rootConnector: ActivityFeedConnector = {
+        let entityGateway = InMemoryRepository()
+        let connector = ActivityFeedConnector(entityGateway: entityGateway)
+        return connector
+    }()
 
     // MARK: - AppDelegate
     

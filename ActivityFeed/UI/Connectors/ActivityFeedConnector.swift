@@ -10,6 +10,13 @@ import UIKit
 
 class ActivityFeedConnector {
     
+    private let entityGateway: EntityGateway
+    
+    // MARK: - Initailization
+    
+    init(entityGateway: EntityGateway) {
+        self.entityGateway = entityGateway
+    }
     
     // MARK: - Public
     
