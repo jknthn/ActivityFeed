@@ -17,6 +17,10 @@
 		7648095B1E5A141E0072A173 /* EntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648095A1E5A141E0072A173 /* EntityGateway.swift */; };
 		7648095E1E5A144A0072A173 /* InMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648095D1E5A144A0072A173 /* InMemoryRepository.swift */; };
 		764809641E5A156F0072A173 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764809631E5A156F0072A173 /* Activity.swift */; };
+		764809661E5A30A30072A173 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764809651E5A30A30072A173 /* UseCase.swift */; };
+		764809681E5A31070072A173 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764809671E5A31070072A173 /* UseCaseFactory.swift */; };
+		7648096B1E5A313C0072A173 /* ShowActivitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648096A1E5A313C0072A173 /* ShowActivitiesUseCase.swift */; };
+		7648096E1E5A31DF0072A173 /* ActivityDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648096D1E5A31DF0072A173 /* ActivityDisplayData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		7648095A1E5A141E0072A173 /* EntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityGateway.swift; sourceTree = "<group>"; };
 		7648095D1E5A144A0072A173 /* InMemoryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryRepository.swift; sourceTree = "<group>"; };
 		764809631E5A156F0072A173 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		764809651E5A30A30072A173 /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		764809671E5A31070072A173 /* UseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
+		7648096A1E5A313C0072A173 /* ShowActivitiesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowActivitiesUseCase.swift; sourceTree = "<group>"; };
+		7648096D1E5A31DF0072A173 /* ActivityDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDisplayData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,7 @@
 		7648094D1E5A108C0072A173 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7648096C1E5A31D40072A173 /* DisplayData */,
 				7648094F1E5A109F0072A173 /* Protocols */,
 				7648094E1E5A10960072A173 /* Presenters */,
 			);
@@ -154,6 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				7648095A1E5A141E0072A173 /* EntityGateway.swift */,
+				764809651E5A30A30072A173 /* UseCase.swift */,
+				764809671E5A31070072A173 /* UseCaseFactory.swift */,
+				764809691E5A311F0072A173 /* UseCases */,
 				764809621E5A14FD0072A173 /* Entities */,
 			);
 			path = Domain;
@@ -173,6 +185,22 @@
 				764809631E5A156F0072A173 /* Activity.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		764809691E5A311F0072A173 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7648096A1E5A313C0072A173 /* ShowActivitiesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7648096C1E5A31D40072A173 /* DisplayData */ = {
+			isa = PBXGroup;
+			children = (
+				7648096D1E5A31DF0072A173 /* ActivityDisplayData.swift */,
+			);
+			path = DisplayData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +280,12 @@
 				7648094C1E5A10760072A173 /* ActivityFeedViewController.swift in Sources */,
 				7648092D1E5A0B7E0072A173 /* AppDelegate.swift in Sources */,
 				7648095E1E5A144A0072A173 /* InMemoryRepository.swift in Sources */,
+				7648096E1E5A31DF0072A173 /* ActivityDisplayData.swift in Sources */,
 				764809541E5A10C90072A173 /* ActivityFeedPresenter.swift in Sources */,
+				764809661E5A30A30072A173 /* UseCase.swift in Sources */,
 				764809641E5A156F0072A173 /* Activity.swift in Sources */,
+				764809681E5A31070072A173 /* UseCaseFactory.swift in Sources */,
+				7648096B1E5A313C0072A173 /* ShowActivitiesUseCase.swift in Sources */,
 				7648095B1E5A141E0072A173 /* EntityGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
