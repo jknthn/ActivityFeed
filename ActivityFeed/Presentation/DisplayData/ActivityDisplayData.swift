@@ -8,17 +8,6 @@
 
 import Foundation
 
-struct WordData {
-    
-    enum WordState: Int {
-        case normal
-        case highlighted
-    }
-    
-    let state: WordState
-    let word: String
-}
-
 struct ActivityDisplayData {
     
     private let activity: Activity
