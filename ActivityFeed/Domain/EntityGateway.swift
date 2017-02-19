@@ -9,5 +9,5 @@
 import Foundation
 
 protocol EntityGateway {
-    
+    func getActivities(for range: Range<Date>, completion: @escaping (Date, [Activity]) -> Void)
 }
