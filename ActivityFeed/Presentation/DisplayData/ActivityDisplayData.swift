@@ -30,4 +30,10 @@ struct ActivityDisplayData {
         return nil
     }
     
+    // MARK: - Initialization
+    
+    init(activity: Activity) {
+        self.activity = activity
+    }
+    
 }

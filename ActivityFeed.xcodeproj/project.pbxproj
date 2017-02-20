@@ -21,6 +21,9 @@
 		764809681E5A31070072A173 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764809671E5A31070072A173 /* UseCaseFactory.swift */; };
 		7648096B1E5A313C0072A173 /* ShowActivitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648096A1E5A313C0072A173 /* ShowActivitiesUseCase.swift */; };
 		7648096E1E5A31DF0072A173 /* ActivityDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648096D1E5A31DF0072A173 /* ActivityDisplayData.swift */; };
+		7663A5311E5B5BDD00BA132E /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5301E5B5BDD00BA132E /* TestData.swift */; };
+		7663A5331E5B5D4600BA132E /* Activity+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5321E5B5D4600BA132E /* Activity+TestData.swift */; };
+		7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5341E5B5E0100BA132E /* ActivityDisplayData+TestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,10 @@
 		7648096D1E5A31DF0072A173 /* ActivityDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDisplayData.swift; sourceTree = "<group>"; };
 		7663A5241E5B5B5600BA132E /* ActivityFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7663A5281E5B5B5600BA132E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7663A52F1E5B5BDC00BA132E /* ActivityFeedTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActivityFeedTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		7663A5301E5B5BDD00BA132E /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		7663A5321E5B5D4600BA132E /* Activity+TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+TestData.swift"; sourceTree = "<group>"; };
+		7663A5341E5B5E0100BA132E /* ActivityDisplayData+TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityDisplayData+TestData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +243,10 @@
 			isa = PBXGroup;
 			children = (
 				7663A5281E5B5B5600BA132E /* Info.plist */,
+				7663A5301E5B5BDD00BA132E /* TestData.swift */,
+				7663A5321E5B5D4600BA132E /* Activity+TestData.swift */,
+				7663A5341E5B5E0100BA132E /* ActivityDisplayData+TestData.swift */,
+				7663A52F1E5B5BDC00BA132E /* ActivityFeedTests-Bridging-Header.h */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -296,6 +307,7 @@
 					7663A5231E5B5B5600BA132E = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = S22AEPX323;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 764809281E5A0B7E0072A173;
 					};
@@ -363,6 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7663A5331E5B5D4600BA132E /* Activity+TestData.swift in Sources */,
+				7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */,
+				7663A5311E5B5BDD00BA132E /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,11 +528,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = S22AEPX323;
 				INFOPLIST_FILE = ActivityFeedTests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.apps.ActivityFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ActivityFeedTests/SupportingFiles/ActivityFeedTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityFeed.app/ActivityFeed";
 			};
@@ -527,11 +545,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = S22AEPX323;
 				INFOPLIST_FILE = ActivityFeedTests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.apps.ActivityFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ActivityFeedTests/SupportingFiles/ActivityFeedTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityFeed.app/ActivityFeed";
 			};
