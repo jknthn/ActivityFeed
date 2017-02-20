@@ -15,4 +15,5 @@ struct Activity {
     let amount: Float
     let userId: Int
     let timestamp: Date
+    
 }
