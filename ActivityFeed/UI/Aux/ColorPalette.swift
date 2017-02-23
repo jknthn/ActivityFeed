@@ -18,6 +18,7 @@ extension UIColor {
             alpha: CGFloat(a)
         )
     }
+    
 }
 
 class ColorPalette {
@@ -26,4 +27,5 @@ class ColorPalette {
     static let textHighlighted = UIColor.black
     static let textNormal = UIColor(r: 173, g: 184, b: 189)
     static let textAmountPositive = UIColor(r: 88, g: 191, b: 10)
+    
 }

@@ -29,6 +29,7 @@
 		7663A54C1E5F451700BA132E /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A54B1E5F451700BA132E /* LabelFactory.swift */; };
 		7663A5561E5F45D600BA132E /* BentonSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7663A5511E5F45D600BA132E /* BentonSans-Regular.otf */; };
 		7663A55A1E5F46A100BA132E /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5591E5F46A100BA132E /* ColorPalette.swift */; };
+		7663A55C1E5F47A900BA132E /* FontPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A55B1E5F47A900BA132E /* FontPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		7663A54B1E5F451700BA132E /* LabelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		7663A5511E5F45D600BA132E /* BentonSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BentonSans-Regular.otf"; path = "../../Fonts/BentonSans-Regular.otf"; sourceTree = "<group>"; };
 		7663A5591E5F46A100BA132E /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		7663A55B1E5F47A900BA132E /* FontPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontPalette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				7663A5591E5F46A100BA132E /* ColorPalette.swift */,
+				7663A55B1E5F47A900BA132E /* FontPalette.swift */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				7663A54C1E5F451700BA132E /* LabelFactory.swift in Sources */,
 				7648092D1E5A0B7E0072A173 /* AppDelegate.swift in Sources */,
 				7663A5491E5F44CA00BA132E /* ActivityCell.swift in Sources */,
+				7663A55C1E5F47A900BA132E /* FontPalette.swift in Sources */,
 				7648095E1E5A144A0072A173 /* InMemoryRepository.swift in Sources */,
 				7648096E1E5A31DF0072A173 /* ActivityDisplayData.swift in Sources */,
 				764809541E5A10C90072A173 /* ActivityFeedPresenter.swift in Sources */,
