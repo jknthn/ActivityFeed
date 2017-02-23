@@ -10,7 +10,15 @@ import Foundation
 
 class ActivityFeedPresenter {
     
+    private let factory: UseCaseFactory
+    
     var view: ActivityFeedView?
+    
+    // MARK: - Initialization
+    
+    init(factory: UseCaseFactory) {
+        self.factory = factory
+    }
     
     // MARK: - Public
     

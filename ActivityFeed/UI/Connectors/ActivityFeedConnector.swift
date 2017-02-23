@@ -21,7 +21,8 @@ class ActivityFeedConnector {
     // MARK: - Public
     
     func createRootViewController() -> UIViewController {
-        let presenter = ActivityFeedPresenter()
+        let factory = UseCaseFactory(entityGateway: entityGateway)
+        let presenter = ActivityFeedPresenter(factory: factory)
         let viewController = ActivityFeedViewController(presenter: presenter, connector: self)
         return UINavigationController(rootViewController: viewController)
     }

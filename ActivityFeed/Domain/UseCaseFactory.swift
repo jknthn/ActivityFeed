@@ -10,4 +10,12 @@ import Foundation
 
 class UseCaseFactory {
     
+    private let entityGateway: EntityGateway
+    
+    // MARK: - Initialization
+    
+    init(entityGateway: EntityGateway) {
+        self.entityGateway = entityGateway
+    }
+    
 }
