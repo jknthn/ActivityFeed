@@ -11,8 +11,13 @@ import Foundation
 class ActivityFeedPresenter {
     
     private let factory: UseCaseFactory
+    private let acitvities = [Activity]()
     
     var view: ActivityFeedView?
+    
+    var numberOfItems: Int {
+        return acitvities.count
+    }
     
     // MARK: - Initialization
     
@@ -23,7 +28,9 @@ class ActivityFeedPresenter {
     // MARK: - Public
     
     func viewReady() {
-        
+        factory.createUseCase(for: .showActivities(completion: { activities in
+            print(activities)
+        })).execute()
     }
     
 }

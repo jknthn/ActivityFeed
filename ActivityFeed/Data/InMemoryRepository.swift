@@ -45,11 +45,7 @@ class InMemoryRepository: EntityGateway {
     // MARK: - Static
     
     private static func dateBySubstractingDaysFromCurrent(amount: Int) -> Date {
-        return Calendar(identifier: NSLocale.current.calendar.identifier).date(
-            byAdding: .day,
-            value: -amount,
-            to: currentDate
-        )!
+        return Calendar.autoupdatingCurrent.date(byAdding: .day, value: -amount, to: currentDate)!
     }
     
     // MARK: - EntityGateway

@@ -61,6 +61,6 @@ class ShowActivitiesUseCase: UseCase {
     }
     
     private func dateBySubstracting2Weeks(from date: Date) -> Date {
-        return Calendar(identifier: NSLocale.current.calendar.identifier).date(byAdding: .day, value: 14, to: date)!
+        return Calendar(identifier: NSLocale.current.calendar.identifier).date(byAdding: .day, value: -14, to: date)!
     }
 }

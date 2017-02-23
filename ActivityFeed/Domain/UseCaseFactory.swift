@@ -10,12 +10,25 @@ import Foundation
 
 class UseCaseFactory {
     
+    enum Use {
+        case showActivities(completion: ShowActivitiesCompletion)
+    }
+    
     private let entityGateway: EntityGateway
     
     // MARK: - Initialization
     
     init(entityGateway: EntityGateway) {
         self.entityGateway = entityGateway
+    }
+    
+    // MARK: - Factory
+    
+    func createUseCase(for use: Use) -> UseCase {
+        switch use {
+        case .showActivities(let completion):
+            return ShowActivitiesUseCase(entityGateway: entityGateway, completion: completion)
+        }
     }
     
 }
