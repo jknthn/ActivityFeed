@@ -28,6 +28,7 @@
 		7663A5491E5F44CA00BA132E /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5481E5F44CA00BA132E /* ActivityCell.swift */; };
 		7663A54C1E5F451700BA132E /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A54B1E5F451700BA132E /* LabelFactory.swift */; };
 		7663A5561E5F45D600BA132E /* BentonSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7663A5511E5F45D600BA132E /* BentonSans-Regular.otf */; };
+		7663A55A1E5F46A100BA132E /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5591E5F46A100BA132E /* ColorPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		7663A5481E5F44CA00BA132E /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		7663A54B1E5F451700BA132E /* LabelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		7663A5511E5F45D600BA132E /* BentonSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BentonSans-Regular.otf"; path = "../../Fonts/BentonSans-Regular.otf"; sourceTree = "<group>"; };
+		7663A5591E5F46A100BA132E /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		764809401E5A0ED70072A173 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7663A5581E5F469700BA132E /* Aux */,
 				7663A54A1E5F450D00BA132E /* Factories */,
 				764809501E5A10AA0072A173 /* Connectors */,
 				764809411E5A0ED70072A173 /* AppDelegate */,
@@ -288,6 +291,14 @@
 			path = Base.lproj/Fonts;
 			sourceTree = "<group>";
 		};
+		7663A5581E5F469700BA132E /* Aux */ = {
+			isa = PBXGroup;
+			children = (
+				7663A5591E5F46A100BA132E /* ColorPalette.swift */,
+			);
+			path = Aux;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +416,7 @@
 				764809541E5A10C90072A173 /* ActivityFeedPresenter.swift in Sources */,
 				764809661E5A30A30072A173 /* UseCase.swift in Sources */,
 				764809641E5A156F0072A173 /* Activity.swift in Sources */,
+				7663A55A1E5F46A100BA132E /* ColorPalette.swift in Sources */,
 				764809681E5A31070072A173 /* UseCaseFactory.swift in Sources */,
 				7648096B1E5A313C0072A173 /* ShowActivitiesUseCase.swift in Sources */,
 				7648095B1E5A141E0072A173 /* EntityGateway.swift in Sources */,
