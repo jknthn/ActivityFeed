@@ -18,7 +18,7 @@ class LabelFactory {
     
     // MARK: - Factory
     
-    func createLabel(for type: LabelType) -> UILabel {
+    func create(for type: LabelType) -> UILabel {
         switch type {
         case .message:
             return messageLabel(from: mainLabel())
