@@ -16,14 +16,42 @@ class LabelFactory {
         case amount
     }
     
+    // MARK: - Factory
+    
     func createLabel(for type: LabelType) -> UILabel {
         switch type {
         case .message:
-            break
+            return messageLabel(from: mainLabel())
         case .date:
-            break
+            return dateLabel(from: mainLabel())
         case .amount:
-            break
+            return amountLabel(from: mainLabel())
         }
+    }
+    
+    // Private
+    
+    private func mainLabel() -> UILabel {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }
+    
+    private func messageLabel(from label: UILabel) -> UILabel {
+        label.font = FontPalette.primary
+        return label
+    }
+    
+    private func dateLabel(from label: UILabel) -> UILabel {
+        label.textColor = ColorPalette.textNormal
+        label.font = FontPalette.secondary
+        return label
+    }
+    
+    private func amountLabel(from label: UILabel) -> UILabel {
+        label.textColor = ColorPalette.textAmountPositive
+        label.font = FontPalette.primary
+        label.textAlignment = .right
+        return label
     }
 }
