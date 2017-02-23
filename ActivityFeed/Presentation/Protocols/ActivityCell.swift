@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ActivityCell {
-    func updateImageUrl(_ url: URL)
+    func updateImageUrl(_ url: URL?)
     func updateMessage(_ message: NSAttributedString)
     func updateDate(_ date: String)
     func updateAmount(_ amount: String)

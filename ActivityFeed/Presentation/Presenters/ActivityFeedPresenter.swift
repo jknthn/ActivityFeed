@@ -11,11 +11,11 @@ import Foundation
 class ActivityFeedPresenter {
     
     private let factory: UseCaseFactory
-    private let acitvities = [Activity]()
+    private var acitvities = [ActivityDisplayData]()
     
     var view: ActivityFeedView?
     
-    var numberOfItems: Int {
+    var activitiesCount: Int {
         return acitvities.count
     }
     
@@ -29,8 +29,15 @@ class ActivityFeedPresenter {
     
     func viewReady() {
         factory.createUseCase(for: .showActivities(completion: { activities in
-            print(activities)
+            self.acitvities.append(contentsOf: activities)
         })).execute()
+    }
+    
+    func setupCell(_ cell: ActivityCell, for row: Int) {
+        cell.updateAmount(acitvities[row].amount)
+        cell.updateMessage(acitvities[row].message)
+        cell.updateDate(acitvities[row].date)
+        cell.updateImageUrl(acitvities[row].imageUrl)
     }
     
 }

@@ -12,8 +12,8 @@ struct ActivityDisplayData {
     
     private let activity: Activity
     
-    var message: String {
-        return activity.message
+    var message: NSAttributedString {
+        return NSAttributedString(string: activity.message)
     }
     
     var amount: String {
@@ -21,7 +21,7 @@ struct ActivityDisplayData {
         return "$\(activity.amount)"
     }
     
-    var dateString: String {
+    var date: String {
         // TODO: - Inject Locale, Format output, use actual date
         return "22 Sep 2016"
     }

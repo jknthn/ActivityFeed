@@ -83,7 +83,7 @@ class ActivityTableViewCell: UITableViewCell, ActivityCell {
     
     // MARK: - ActivityCell
     
-    func updateImageUrl(_ url: URL) {
+    func updateImageUrl(_ url: URL?) {
         // TODO: - Assign image
     }
     

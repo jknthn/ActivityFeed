@@ -26,18 +26,35 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - UITableViewController
-    
-    override func viewDidLoad() {
-        presenter.viewReady()
-    }
-    
     // MARK: - Setup
     
     func setupController() {
         title = "Activity"
         view.backgroundColor = UIColor.white
+        
+        tableView.tableFooterView = UIView()
+        tableView.estimatedRowHeight = 100.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.registerCellsWithClass(ActivityTableViewCell.self)
     }
+    
+    // MARK: - UITableViewController
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter.viewReady()
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.activitiesCount
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellOfType(type: ActivityTableViewCell.self, forIndexPath: indexPath)
+        presenter.setupCell(cell, for: indexPath.row)
+        return cell
+    }
+
     
     // MARK: - ActivityFeedView
     
