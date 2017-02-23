@@ -30,6 +30,7 @@
 		7663A5561E5F45D600BA132E /* BentonSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7663A5511E5F45D600BA132E /* BentonSans-Regular.otf */; };
 		7663A55A1E5F46A100BA132E /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5591E5F46A100BA132E /* ColorPalette.swift */; };
 		7663A55C1E5F47A900BA132E /* FontPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A55B1E5F47A900BA132E /* FontPalette.swift */; };
+		7663A55E1E5F4D9700BA132E /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		7663A5511E5F45D600BA132E /* BentonSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BentonSans-Regular.otf"; path = "../../Fonts/BentonSans-Regular.otf"; sourceTree = "<group>"; };
 		7663A5591E5F46A100BA132E /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		7663A55B1E5F47A900BA132E /* FontPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontPalette.swift; sourceTree = "<group>"; };
+		7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 			children = (
 				7663A5591E5F46A100BA132E /* ColorPalette.swift */,
 				7663A55B1E5F47A900BA132E /* FontPalette.swift */,
+				7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				764809561E5A10D60072A173 /* ActivityFeedView.swift in Sources */,
+				7663A55E1E5F4D9700BA132E /* ReusableIdentifier.swift in Sources */,
 				764809521E5A10B60072A173 /* ActivityFeedConnector.swift in Sources */,
 				7648094C1E5A10760072A173 /* ActivityFeedViewController.swift in Sources */,
 				7663A54C1E5F451700BA132E /* LabelFactory.swift in Sources */,
