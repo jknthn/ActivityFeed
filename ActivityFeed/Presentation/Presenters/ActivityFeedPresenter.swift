@@ -12,4 +12,10 @@ class ActivityFeedPresenter {
     
     var view: ActivityFeedView?
     
+    // MARK: - Public
+    
+    func viewReady() {
+        
+    }
+    
 }

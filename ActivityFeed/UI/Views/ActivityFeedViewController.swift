@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActivityFeedViewController: UIViewController, ActivityFeedView {
+class ActivityFeedViewController: UITableViewController, ActivityFeedView {
     
     private let presenter: ActivityFeedPresenter
     private let connector: ActivityFeedConnector
@@ -19,13 +19,27 @@ class ActivityFeedViewController: UIViewController, ActivityFeedView {
         self.presenter = presenter
         self.connector = connector
         super.init(nibName: nil, bundle: nil)
-        title = "Activity"
-        view.backgroundColor = UIColor.white
+        setupController()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - UITableViewController
+    
+    override func viewDidLoad() {
+        presenter.viewReady()
+    }
+    
+    // MARK: - Setup
+    
+    func setupController() {
+        title = "Activity"
+        view.backgroundColor = UIColor.white
+    }
+    
+    // MARK: - ActivityFeedView
     
     
 }
