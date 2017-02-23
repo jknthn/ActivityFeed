@@ -24,6 +24,8 @@
 		7663A5311E5B5BDD00BA132E /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5301E5B5BDD00BA132E /* TestData.swift */; };
 		7663A5331E5B5D4600BA132E /* Activity+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5321E5B5D4600BA132E /* Activity+TestData.swift */; };
 		7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5341E5B5E0100BA132E /* ActivityDisplayData+TestData.swift */; };
+		7663A5471E5F3EA700BA132E /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5461E5F3EA700BA132E /* ActivityTableViewCell.swift */; };
+		7663A5491E5F44CA00BA132E /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5481E5F44CA00BA132E /* ActivityCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		7663A5301E5B5BDD00BA132E /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		7663A5321E5B5D4600BA132E /* Activity+TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+TestData.swift"; sourceTree = "<group>"; };
 		7663A5341E5B5E0100BA132E /* ActivityDisplayData+TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityDisplayData+TestData.swift"; sourceTree = "<group>"; };
+		7663A5461E5F3EA700BA132E /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		7663A5481E5F44CA00BA132E /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 			children = (
 				764809501E5A10AA0072A173 /* Connectors */,
 				764809411E5A0ED70072A173 /* AppDelegate */,
+				7663A5451E5F3E9500BA132E /* SupplementaryViews */,
 				764809421E5A0EE20072A173 /* Views */,
 			);
 			path = UI;
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				764809551E5A10D60072A173 /* ActivityFeedView.swift */,
+				7663A5481E5F44CA00BA132E /* ActivityCell.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -249,6 +255,14 @@
 				7663A52F1E5B5BDC00BA132E /* ActivityFeedTests-Bridging-Header.h */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7663A5451E5F3E9500BA132E /* SupplementaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				7663A5461E5F3EA700BA132E /* ActivityTableViewCell.swift */,
+			);
+			path = SupplementaryViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +374,7 @@
 				764809521E5A10B60072A173 /* ActivityFeedConnector.swift in Sources */,
 				7648094C1E5A10760072A173 /* ActivityFeedViewController.swift in Sources */,
 				7648092D1E5A0B7E0072A173 /* AppDelegate.swift in Sources */,
+				7663A5491E5F44CA00BA132E /* ActivityCell.swift in Sources */,
 				7648095E1E5A144A0072A173 /* InMemoryRepository.swift in Sources */,
 				7648096E1E5A31DF0072A173 /* ActivityDisplayData.swift in Sources */,
 				764809541E5A10C90072A173 /* ActivityFeedPresenter.swift in Sources */,
@@ -368,6 +383,7 @@
 				764809681E5A31070072A173 /* UseCaseFactory.swift in Sources */,
 				7648096B1E5A313C0072A173 /* ShowActivitiesUseCase.swift in Sources */,
 				7648095B1E5A141E0072A173 /* EntityGateway.swift in Sources */,
+				7663A5471E5F3EA700BA132E /* ActivityTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +601,7 @@
 				7663A52C1E5B5B5600BA132E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

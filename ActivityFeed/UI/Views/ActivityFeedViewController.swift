@@ -19,6 +19,8 @@ class ActivityFeedViewController: UIViewController, ActivityFeedView {
         self.presenter = presenter
         self.connector = connector
         super.init(nibName: nil, bundle: nil)
+        title = "Activity"
+        view.backgroundColor = UIColor.white
     }
     
     required init?(coder aDecoder: NSCoder) {
