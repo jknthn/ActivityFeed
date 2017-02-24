@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ActivityDisplayData {
+struct ActivityDisplayData: Equatable {
     
     private let activity: Activity
     
@@ -39,4 +39,12 @@ struct ActivityDisplayData {
     init(activity: Activity) {
         self.activity = activity
     }
+    
+    // MARK: - Equatable
+    
+    static func ==(lhs: ActivityDisplayData, rhs: ActivityDisplayData) -> Bool {
+        if lhs.activity != rhs.activity { return false }
+        return true
+    }
+    
 }
