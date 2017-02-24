@@ -52,11 +52,13 @@ class ShowActivitiesUseCase: UseCase {
             return nil
         }
         
-        let range = Range(uncheckedBounds: (lower: end, upper: start))
+        if let oldest = oldestDate, start < oldest {
+            return nil
+        }
         
+        let range = Range(uncheckedBounds: (lower: end, upper: start))
         startDate = end
         endDate = dateBySubstracting2Weeks(from: end)
-        
         return range
     }
     

@@ -52,7 +52,7 @@ class InMemoryRepository: EntityGateway {
     
     func getActivities(for range: Range<Date>, completion: @escaping (Date, [Activity]) -> Void) {
         let selectedActivities = InMemoryRepository.acivities.filter { range.contains($0.timestamp) }
-        let oldestDate = InMemoryRepository.acivities.map { $0.timestamp }.sorted(by: >).first!
+        let oldestDate = InMemoryRepository.acivities.map { $0.timestamp }.sorted(by: <).first!
         completion(oldestDate, selectedActivities)
     }
 }
