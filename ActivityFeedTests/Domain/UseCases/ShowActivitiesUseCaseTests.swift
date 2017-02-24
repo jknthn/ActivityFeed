@@ -1,5 +1,5 @@
 //
-//  UseCaseFactoryTests.swift
+//  ShowActivitiesUseCaseTests.swift
 //  ActivityFeed
 //
 //  Created by Jeremi Kaczmarczyk on 24/02/2017.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import ActivityFeed
 
-class UseCaseFactoryTest: XCTestCase {
+class ShowActivitiesUseCaseTests: XCTestCase {
     
     var useCaseFactory: UseCaseFactory!
     var entityGateway: EnitityGatewayMock!
@@ -30,17 +30,15 @@ class UseCaseFactoryTest: XCTestCase {
     
     // MARK: - Tests
     
-    func testFactoryCreatesShowActivitiesUseCase() {
-        let useCase = useCaseFactory.createUseCase(for: .showActivities(completion: { _ in }))
-        XCTAssertNotNil(useCase as? ShowActivitiesUseCase)
-    }
-    
     // MARK: - Mocks
     
     class EnitityGatewayMock: EntityGateway {
         
-        func getActivities(for range: Range<Date>, completion: @escaping (Date, [Activity]) -> Void) { }
+        var activities = [Activity]()
         
-    }
+        func getActivities(for range: Range<Date>, completion: @escaping (Date, [Activity]) -> Void) {
+            
+        }
     
+    }
 }
