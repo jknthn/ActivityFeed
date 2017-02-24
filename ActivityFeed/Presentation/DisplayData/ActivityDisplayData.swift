@@ -30,10 +30,13 @@ struct ActivityDisplayData {
         return nil
     }
     
+    var timestamp: Double {
+        return activity.timestamp.timeIntervalSinceReferenceDate
+    }
+    
     // MARK: - Initialization
     
     init(activity: Activity) {
         self.activity = activity
     }
-    
 }
