@@ -31,6 +31,7 @@
 		7663A55A1E5F46A100BA132E /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5591E5F46A100BA132E /* ColorPalette.swift */; };
 		7663A55C1E5F47A900BA132E /* FontPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A55B1E5F47A900BA132E /* FontPalette.swift */; };
 		7663A55E1E5F4D9700BA132E /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */; };
+		7663A56B1E60B65400BA132E /* UseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A56A1E60B65400BA132E /* UseCaseFactoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		7663A5591E5F46A100BA132E /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		7663A55B1E5F47A900BA132E /* FontPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontPalette.swift; sourceTree = "<group>"; };
 		7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
+		7663A56A1E60B65400BA132E /* UseCaseFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseFactoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 		7663A5251E5B5B5600BA132E /* ActivityFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				7663A5691E60B64600BA132E /* Domain */,
 				7663A52E1E5B5B6A00BA132E /* SupportingFiles */,
 			);
 			path = ActivityFeedTests;
@@ -303,6 +306,14 @@
 				7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */,
 			);
 			path = Aux;
+			sourceTree = "<group>";
+		};
+		7663A5691E60B64600BA132E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7663A56A1E60B65400BA132E /* UseCaseFactoryTests.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7663A56B1E60B65400BA132E /* UseCaseFactoryTests.swift in Sources */,
 				7663A5331E5B5D4600BA132E /* Activity+TestData.swift in Sources */,
 				7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */,
 				7663A5311E5B5BDD00BA132E /* TestData.swift in Sources */,
