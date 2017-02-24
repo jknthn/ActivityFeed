@@ -9,5 +9,6 @@
 import Foundation
 
 protocol ActivityFeedView {
-    
+    func reloadView()
+    func reloadItems(at range: CountableClosedRange<Int>)
 }

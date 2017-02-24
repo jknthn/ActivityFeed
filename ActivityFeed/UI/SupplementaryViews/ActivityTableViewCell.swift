@@ -73,8 +73,8 @@ class ActivityTableViewCell: UITableViewCell, ActivityCell {
         NSLayoutConstraint.activate([
             mainStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15.5),
             mainStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0),
-            mainStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 20.0),
-            mainStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 17.0),
+            mainStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
+            mainStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -17.0),
             
             avatarImageView.heightAnchor.constraint(equalToConstant: 30.0),
             avatarImageView.widthAnchor.constraint(equalTo: avatarImageView.heightAnchor),

@@ -12,6 +12,7 @@ class ActivityFeedPresenter {
     
     private let factory: UseCaseFactory
     private var acitvities = [ActivityDisplayData]()
+    private var useCase: UseCase!
     
     var view: ActivityFeedView?
     
@@ -28,9 +29,11 @@ class ActivityFeedPresenter {
     // MARK: - Public
     
     func viewReady() {
-        factory.createUseCase(for: .showActivities(completion: { activities in
+        useCase = factory.createUseCase(for: .showActivities(completion: { activities in
             self.acitvities.append(contentsOf: activities)
-        })).execute()
+        }))
+        useCase.execute()
+        view?.reloadView()
     }
     
     func setupCell(_ cell: ActivityCell, for row: Int) {
@@ -39,5 +42,15 @@ class ActivityFeedPresenter {
         cell.updateDate(acitvities[row].date)
         cell.updateImageUrl(acitvities[row].imageUrl)
     }
+    
+    func loadMore() {
+        let currentCount = activitiesCount
+        useCase.execute()
+        let newActivities = activitiesCount - currentCount
+        if newActivities > 0 {
+            view?.reloadItems(at: currentCount...activitiesCount - 1)            
+        }
+    }
+    
     
 }

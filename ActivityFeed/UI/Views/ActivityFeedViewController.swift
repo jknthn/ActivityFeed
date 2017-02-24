@@ -36,6 +36,7 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.registerCellsWithClass(ActivityTableViewCell.self)
+        tableView.allowsSelection = false
     }
     
     // MARK: - UITableViewController
@@ -54,9 +55,21 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
         presenter.setupCell(cell, for: indexPath.row)
         return cell
     }
-
     
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if velocity.y > 0.0 {
+            presenter.loadMore()
+        }
+    }
+
     // MARK: - ActivityFeedView
     
+    func reloadView() {
+        tableView.reloadData()
+    }
     
+    func reloadItems(at range: CountableClosedRange<Int>) {
+        let paths = range.map { IndexPath(row: $0, section: 0) }
+        tableView.insertRows(at: paths, with: .left)
+    }
 }
