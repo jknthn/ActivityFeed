@@ -33,6 +33,8 @@
 		7663A55E1E5F4D9700BA132E /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */; };
 		7663A56B1E60B65400BA132E /* UseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A56A1E60B65400BA132E /* UseCaseFactoryTests.swift */; };
 		7663A56E1E60BA1A00BA132E /* ShowActivitiesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A56D1E60BA1A00BA132E /* ShowActivitiesUseCaseTests.swift */; };
+		7663A5711E60BCAD00BA132E /* ActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5701E60BCAD00BA132E /* ActivityTests.swift */; };
+		7663A5771E60BE7C00BA132E /* ActivityDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5761E60BE7C00BA132E /* ActivityDisplayData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
 		7663A56A1E60B65400BA132E /* UseCaseFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseFactoryTests.swift; sourceTree = "<group>"; };
 		7663A56D1E60BA1A00BA132E /* ShowActivitiesUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowActivitiesUseCaseTests.swift; sourceTree = "<group>"; };
+		7663A5701E60BCAD00BA132E /* ActivityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTests.swift; sourceTree = "<group>"; };
+		7663A5761E60BE7C00BA132E /* ActivityDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDisplayData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				7663A5691E60B64600BA132E /* Domain */,
+				7663A5721E60BE3B00BA132E /* Presentation */,
 				7663A52E1E5B5B6A00BA132E /* SupportingFiles */,
 			);
 			path = ActivityFeedTests;
@@ -315,6 +320,7 @@
 			children = (
 				7663A56A1E60B65400BA132E /* UseCaseFactoryTests.swift */,
 				7663A56C1E60BA0600BA132E /* UseCases */,
+				7663A56F1E60BC9D00BA132E /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -325,6 +331,30 @@
 				7663A56D1E60BA1A00BA132E /* ShowActivitiesUseCaseTests.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7663A56F1E60BC9D00BA132E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7663A5701E60BCAD00BA132E /* ActivityTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7663A5721E60BE3B00BA132E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7663A5751E60BE6600BA132E /* DisplayData */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7663A5751E60BE6600BA132E /* DisplayData */ = {
+			isa = PBXGroup;
+			children = (
+				7663A5761E60BE7C00BA132E /* ActivityDisplayData.swift */,
+			);
+			path = DisplayData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,8 +490,10 @@
 			files = (
 				7663A56B1E60B65400BA132E /* UseCaseFactoryTests.swift in Sources */,
 				7663A5331E5B5D4600BA132E /* Activity+TestData.swift in Sources */,
+				7663A5771E60BE7C00BA132E /* ActivityDisplayData.swift in Sources */,
 				7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */,
 				7663A56E1E60BA1A00BA132E /* ShowActivitiesUseCaseTests.swift in Sources */,
+				7663A5711E60BCAD00BA132E /* ActivityTests.swift in Sources */,
 				7663A5311E5B5BDD00BA132E /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
