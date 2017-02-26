@@ -28,7 +28,7 @@ class ShowActivitiesUseCase: UseCase {
         
         startDate = Date()
         // TODO: - Inject locale
-        endDate = dateBySubstracting2Weeks(from: startDate!)
+        endDate = startDate?.substracting2Weeks()
     }
     
     // MARK: - UseCase
@@ -58,11 +58,9 @@ class ShowActivitiesUseCase: UseCase {
         
         let range = Range(uncheckedBounds: (lower: end, upper: start))
         startDate = end
-        endDate = dateBySubstracting2Weeks(from: end)
+        endDate = end.substracting2Weeks()
         return range
     }
     
-    private func dateBySubstracting2Weeks(from date: Date) -> Date {
-        return Calendar(identifier: NSLocale.current.calendar.identifier).date(byAdding: .day, value: -14, to: date)!
-    }
+
 }
