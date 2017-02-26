@@ -39,6 +39,8 @@
 		7663A57D1E62EFC900BA132E /* Date+SubtractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A57C1E62EFC900BA132E /* Date+SubtractTests.swift */; };
 		7663A57F1E62F2D100BA132E /* DateRangeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */; };
 		7663A5811E62F61800BA132E /* DateRangeIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5801E62F61800BA132E /* DateRangeIteratorTests.swift */; };
+		7663A5831E6305A800BA132E /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5821E6305A800BA132E /* ApiEndpoint.swift */; };
+		7663A5861E63078800BA132E /* ApiEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5851E63078800BA132E /* ApiEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		7663A57C1E62EFC900BA132E /* Date+SubtractTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+SubtractTests.swift"; sourceTree = "<group>"; };
 		7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeIterator.swift; sourceTree = "<group>"; };
 		7663A5801E62F61800BA132E /* DateRangeIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeIteratorTests.swift; sourceTree = "<group>"; };
+		7663A5821E6305A800BA132E /* ApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		7663A5851E63078800BA132E /* ApiEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				7648095D1E5A144A0072A173 /* InMemoryRepository.swift */,
+				7663A5821E6305A800BA132E /* ApiEndpoint.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 		7663A5251E5B5B5600BA132E /* ActivityFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				7663A5841E63077C00BA132E /* Data */,
 				7663A5691E60B64600BA132E /* Domain */,
 				7663A5721E60BE3B00BA132E /* Presentation */,
 				7663A52E1E5B5B6A00BA132E /* SupportingFiles */,
@@ -383,6 +389,14 @@
 				7663A5801E62F61800BA132E /* DateRangeIteratorTests.swift */,
 			);
 			path = Aux;
+			sourceTree = "<group>";
+		};
+		7663A5841E63077C00BA132E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7663A5851E63078800BA132E /* ApiEndpointTests.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,6 +522,7 @@
 				7663A55A1E5F46A100BA132E /* ColorPalette.swift in Sources */,
 				764809681E5A31070072A173 /* UseCaseFactory.swift in Sources */,
 				7648096B1E5A313C0072A173 /* ShowActivitiesUseCase.swift in Sources */,
+				7663A5831E6305A800BA132E /* ApiEndpoint.swift in Sources */,
 				7663A57F1E62F2D100BA132E /* DateRangeIterator.swift in Sources */,
 				7648095B1E5A141E0072A173 /* EntityGateway.swift in Sources */,
 				7663A5471E5F3EA700BA132E /* ActivityTableViewCell.swift in Sources */,
@@ -519,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7663A56B1E60B65400BA132E /* UseCaseFactoryTests.swift in Sources */,
+				7663A5861E63078800BA132E /* ApiEndpointTests.swift in Sources */,
 				7663A5331E5B5D4600BA132E /* Activity+TestData.swift in Sources */,
 				7663A5771E60BE7C00BA132E /* ActivityDisplayData.swift in Sources */,
 				7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */,

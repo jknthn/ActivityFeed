@@ -30,14 +30,14 @@ class InMemoryRepository: EntityGateway {
             id: "1234a",
             message: "This is third message",
             amount: 7.2,
-            userId: 1,
+            userId: 2,
             timestamp: dateBySubstractingDaysFromCurrent(amount: 10)
         ),
         Activity(
             id: "1234a",
             message: "This is fourth message",
             amount: 10.2,
-            userId: 3,
+            userId: 1,
             timestamp: dateBySubstractingDaysFromCurrent(amount: 5)
         )
     ]
