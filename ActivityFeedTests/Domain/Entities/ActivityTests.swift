@@ -71,4 +71,16 @@ class ActivityTests: XCTestCase {
         XCTAssertNotEqual(activity, otherActivity)
     }
     
+    func testFromValidJson() {
+        let json = TestData.activityJson
+        let jsonActivity = Activity.fromJson(json: json)!
+        XCTAssertEqual(jsonActivity, activity)
+    }
+    
+    func testFromInvalidJson() {
+        let json = [String: AnyObject]()
+        let jsonActivity = Activity.fromJson(json: json)
+        XCTAssertNil(jsonActivity)
+    }
+    
 }

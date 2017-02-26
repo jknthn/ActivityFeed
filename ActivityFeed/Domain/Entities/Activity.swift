@@ -18,7 +18,17 @@ struct Activity: JsonParsable, Equatable {
     // MARK: - JsonParsable
     
     static func fromJson(json: JsonDictionary) -> Activity? {
-        return nil
+        let formatter = ISO8601DateFormatter()
+        guard
+            let message = json["message"] as? String,
+            let amount = json["amount"] as? Float,
+            let userId = json["userId"] as? Int,
+            let timestampRaw = json["timestamp"] as? String,
+            let timestamp = formatter.date(from: timestampRaw)
+        else {
+            return nil
+        }
+        return Activity(message: message, amount: amount, userId: userId, timestamp: timestamp)
     }
     
     // MARK: - Equatable
@@ -27,7 +37,7 @@ struct Activity: JsonParsable, Equatable {
         if lhs.message != rhs.message { return false }
         if lhs.amount != rhs.amount { return false }
         if lhs.userId != rhs.userId { return false }
-        if lhs.timestamp != rhs.timestamp { return false }
+        if Int(lhs.timestamp.timeIntervalSince1970) != Int(rhs.timestamp.timeIntervalSince1970) { return false }
         return true
     }
     

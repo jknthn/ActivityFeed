@@ -18,5 +18,11 @@ struct TestData {
     static let altUserId = 2
     static let mainTimestamp = Date()
     static let altTimestamp = Date().addingTimeInterval(-15 * 24 * 60 * 60)
+    static let activityJson: [String: AnyObject] = [
+        "message": mainMessage as AnyObject,
+        "amount": mainAmount as AnyObject,
+        "userId": mainUserId as AnyObject,
+        "timestamp": ISO8601DateFormatter().string(from: mainTimestamp) as AnyObject
+    ]
     
 }
