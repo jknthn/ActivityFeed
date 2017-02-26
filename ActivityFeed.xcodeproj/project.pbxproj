@@ -38,6 +38,7 @@
 		7663A57A1E62EE6E00BA132E /* Date+Subtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5791E62EE6E00BA132E /* Date+Subtract.swift */; };
 		7663A57D1E62EFC900BA132E /* Date+SubtractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A57C1E62EFC900BA132E /* Date+SubtractTests.swift */; };
 		7663A57F1E62F2D100BA132E /* DateRangeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */; };
+		7663A5811E62F61800BA132E /* DateRangeIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5801E62F61800BA132E /* DateRangeIteratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		7663A5791E62EE6E00BA132E /* Date+Subtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Subtract.swift"; sourceTree = "<group>"; };
 		7663A57C1E62EFC900BA132E /* Date+SubtractTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+SubtractTests.swift"; sourceTree = "<group>"; };
 		7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeIterator.swift; sourceTree = "<group>"; };
+		7663A5801E62F61800BA132E /* DateRangeIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeIteratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				7663A57C1E62EFC900BA132E /* Date+SubtractTests.swift */,
+				7663A5801E62F61800BA132E /* DateRangeIteratorTests.swift */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				7663A5771E60BE7C00BA132E /* ActivityDisplayData.swift in Sources */,
 				7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */,
 				7663A56E1E60BA1A00BA132E /* ShowActivitiesUseCaseTests.swift in Sources */,
+				7663A5811E62F61800BA132E /* DateRangeIteratorTests.swift in Sources */,
 				7663A5711E60BCAD00BA132E /* ActivityTests.swift in Sources */,
 				7663A5311E5B5BDD00BA132E /* TestData.swift in Sources */,
 				7663A57D1E62EFC900BA132E /* Date+SubtractTests.swift in Sources */,

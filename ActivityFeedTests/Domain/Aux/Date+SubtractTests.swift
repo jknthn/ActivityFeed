@@ -13,7 +13,7 @@ class DateSubtractTests: XCTestCase {
     
     func testSubtractValid() {
         let date = Date()
-        let dateInterval = date.substracting2Weeks()!.timeIntervalSince1970
+        let dateInterval = date.subtracting2Weeks().timeIntervalSince1970
         let otherInterval = date.addingTimeInterval(-60.0 * 60.0 * 24.0 * 14.0).timeIntervalSince1970
         XCTAssertEqual(dateInterval, otherInterval)
     }

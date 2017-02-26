@@ -10,8 +10,8 @@ import Foundation
 
 extension Date {
     
-    func substracting2Weeks() -> Date? {
-        return Calendar.autoupdatingCurrent.date(byAdding: .day, value: -14, to: self)
+    func subtracting2Weeks() -> Date {
+        return Calendar.autoupdatingCurrent.date(byAdding: .day, value: -14, to: self)!
     }
     
 }

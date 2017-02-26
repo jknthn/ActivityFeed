@@ -10,17 +10,15 @@ import Foundation
 
 struct DateRangeIterator: Sequence, IteratorProtocol {
     
-    private(set) var count: Int?
-    
-    private var oldestDate = Date(timeIntervalSince1970: 0.0)
+    private(set) var oldestDate = Date(timeIntervalSince1970: 0.0)
     private var startDate: Date
     private var endDate: Date
     
     // MARK: - Initialization
     
-    init() {
-        startDate = Date()
-        endDate = startDate.substracting2Weeks()!
+    init(startDate: Date = Date()) {
+        self.startDate = startDate
+        self.endDate = startDate.subtracting2Weeks()
     }
     
     // MARK: - Public 
@@ -40,7 +38,7 @@ struct DateRangeIterator: Sequence, IteratorProtocol {
         
         let range = Range(uncheckedBounds: (lower: endDate, upper: startDate))
         startDate = endDate
-        endDate = endDate.substracting2Weeks()!
+        endDate = endDate.subtracting2Weeks()
         return range
     }
     
