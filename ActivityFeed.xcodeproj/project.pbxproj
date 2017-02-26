@@ -42,6 +42,7 @@
 		7663A5831E6305A800BA132E /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5821E6305A800BA132E /* ApiEndpoint.swift */; };
 		7663A5861E63078800BA132E /* ApiEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5851E63078800BA132E /* ApiEndpointTests.swift */; };
 		7663A5881E63394A00BA132E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5871E63394A00BA132E /* Result.swift */; };
+		7663A58A1E633A0200BA132E /* JsonParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5891E633A0200BA132E /* JsonParsable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		7663A5821E6305A800BA132E /* ApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 		7663A5851E63078800BA132E /* ApiEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpointTests.swift; sourceTree = "<group>"; };
 		7663A5871E63394A00BA132E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7663A5891E633A0200BA132E /* JsonParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParsable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +383,7 @@
 				7663A5791E62EE6E00BA132E /* Date+Subtract.swift */,
 				7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */,
 				7663A5871E63394A00BA132E /* Result.swift */,
+				7663A5891E633A0200BA132E /* JsonParsable.swift */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				764809641E5A156F0072A173 /* Activity.swift in Sources */,
 				7663A55A1E5F46A100BA132E /* ColorPalette.swift in Sources */,
 				764809681E5A31070072A173 /* UseCaseFactory.swift in Sources */,
+				7663A58A1E633A0200BA132E /* JsonParsable.swift in Sources */,
 				7648096B1E5A313C0072A173 /* ShowActivitiesUseCase.swift in Sources */,
 				7663A5831E6305A800BA132E /* ApiEndpoint.swift in Sources */,
 				7663A57F1E62F2D100BA132E /* DateRangeIterator.swift in Sources */,
