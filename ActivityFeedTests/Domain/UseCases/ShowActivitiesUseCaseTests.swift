@@ -55,6 +55,7 @@ class ShowActivitiesUseCaseTests: XCTestCase {
     }
     
     func testExecuteChangesRange() {
+        entityGateway.activities = [Activity.main]
         useCase.execute()
         let firstRange = entityGateway.range
         useCase.execute()
@@ -62,16 +63,23 @@ class ShowActivitiesUseCaseTests: XCTestCase {
         XCTAssertNotEqual(firstRange, secondRange)
     }
     
+    func testExecuteRecursesOnNoActivitiesFound() {
+        useCase.execute()
+        XCTAssertLessThan(entityGateway.range.lowerBound, entityGateway.minDate)
+    }
+    
     // MARK: - Mocks
     
     class EnitityGatewayMock: EntityGateway {
         
+        let minDate = Date(timeIntervalSince1970: 0.0)
+        
         var activities = [Activity]()
         var range: Range<Date>!
-        
+
         func getActivities(for range: Range<Date>, completion: @escaping (Date, [Activity]) -> Void) {
             self.range = range
-            completion(Date(timeIntervalSince1970: 0.0), activities)
+            completion(minDate, activities)
         }
     
     }

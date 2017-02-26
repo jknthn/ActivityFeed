@@ -30,6 +30,10 @@ class ShowActivitiesUseCase: UseCase {
             return
         }
         entityGateway.getActivities(for: range) { [weak self] oldest, activities in
+            guard !activities.isEmpty else {
+                self?.execute()
+                return
+            }
             self?.rangeIterator.changeOldestDate(to: oldest)
             self?.completion(activities.map(ActivityDisplayData.init).sorted { $0.0.timestamp > $0.1.timestamp })
         }
