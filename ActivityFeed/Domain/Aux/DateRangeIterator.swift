@@ -1,5 +1,5 @@
 //
-//  DateRangeGenerator.swift
+//  DateRangeIterator.swift
 //  ActivityFeed
 //
 //  Created by Jeremi Kaczmarczyk on 26/02/2017.

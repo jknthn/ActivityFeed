@@ -37,7 +37,7 @@
 		7663A5771E60BE7C00BA132E /* ActivityDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5761E60BE7C00BA132E /* ActivityDisplayData.swift */; };
 		7663A57A1E62EE6E00BA132E /* Date+Subtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5791E62EE6E00BA132E /* Date+Subtract.swift */; };
 		7663A57D1E62EFC900BA132E /* Date+SubtractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A57C1E62EFC900BA132E /* Date+SubtractTests.swift */; };
-		7663A57F1E62F2D100BA132E /* DateRangeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A57E1E62F2D100BA132E /* DateRangeGenerator.swift */; };
+		7663A57F1E62F2D100BA132E /* DateRangeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +86,7 @@
 		7663A5761E60BE7C00BA132E /* ActivityDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDisplayData.swift; sourceTree = "<group>"; };
 		7663A5791E62EE6E00BA132E /* Date+Subtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Subtract.swift"; sourceTree = "<group>"; };
 		7663A57C1E62EFC900BA132E /* Date+SubtractTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+SubtractTests.swift"; sourceTree = "<group>"; };
-		7663A57E1E62F2D100BA132E /* DateRangeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeGenerator.swift; sourceTree = "<group>"; };
+		7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,7 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				7663A5791E62EE6E00BA132E /* Date+Subtract.swift */,
-				7663A57E1E62F2D100BA132E /* DateRangeGenerator.swift */,
+				7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -505,7 +505,7 @@
 				7663A55A1E5F46A100BA132E /* ColorPalette.swift in Sources */,
 				764809681E5A31070072A173 /* UseCaseFactory.swift in Sources */,
 				7648096B1E5A313C0072A173 /* ShowActivitiesUseCase.swift in Sources */,
-				7663A57F1E62F2D100BA132E /* DateRangeGenerator.swift in Sources */,
+				7663A57F1E62F2D100BA132E /* DateRangeIterator.swift in Sources */,
 				7648095B1E5A141E0072A173 /* EntityGateway.swift in Sources */,
 				7663A5471E5F3EA700BA132E /* ActivityTableViewCell.swift in Sources */,
 			);
