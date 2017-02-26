@@ -41,6 +41,7 @@
 		7663A5811E62F61800BA132E /* DateRangeIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5801E62F61800BA132E /* DateRangeIteratorTests.swift */; };
 		7663A5831E6305A800BA132E /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5821E6305A800BA132E /* ApiEndpoint.swift */; };
 		7663A5861E63078800BA132E /* ApiEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5851E63078800BA132E /* ApiEndpointTests.swift */; };
+		7663A5881E63394A00BA132E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5871E63394A00BA132E /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		7663A5801E62F61800BA132E /* DateRangeIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeIteratorTests.swift; sourceTree = "<group>"; };
 		7663A5821E6305A800BA132E /* ApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 		7663A5851E63078800BA132E /* ApiEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpointTests.swift; sourceTree = "<group>"; };
+		7663A5871E63394A00BA132E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +380,7 @@
 			children = (
 				7663A5791E62EE6E00BA132E /* Date+Subtract.swift */,
 				7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */,
+				7663A5871E63394A00BA132E /* Result.swift */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				7663A55C1E5F47A900BA132E /* FontPalette.swift in Sources */,
 				7648095E1E5A144A0072A173 /* InMemoryRepository.swift in Sources */,
 				7648096E1E5A31DF0072A173 /* ActivityDisplayData.swift in Sources */,
+				7663A5881E63394A00BA132E /* Result.swift in Sources */,
 				764809541E5A10C90072A173 /* ActivityFeedPresenter.swift in Sources */,
 				7663A57A1E62EE6E00BA132E /* Date+Subtract.swift in Sources */,
 				764809661E5A30A30072A173 /* UseCase.swift in Sources */,
