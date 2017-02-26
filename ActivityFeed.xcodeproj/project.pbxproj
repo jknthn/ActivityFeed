@@ -43,6 +43,7 @@
 		7663A5861E63078800BA132E /* ApiEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5851E63078800BA132E /* ApiEndpointTests.swift */; };
 		7663A5881E63394A00BA132E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5871E63394A00BA132E /* Result.swift */; };
 		7663A58A1E633A0200BA132E /* JsonParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5891E633A0200BA132E /* JsonParsable.swift */; };
+		7663A58C1E63428100BA132E /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A58B1E63428100BA132E /* ApiRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		7663A5851E63078800BA132E /* ApiEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpointTests.swift; sourceTree = "<group>"; };
 		7663A5871E63394A00BA132E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		7663A5891E633A0200BA132E /* JsonParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParsable.swift; sourceTree = "<group>"; };
+		7663A58B1E63428100BA132E /* ApiRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				7648095D1E5A144A0072A173 /* InMemoryRepository.swift */,
+				7663A58B1E63428100BA132E /* ApiRepository.swift */,
 				7663A5821E6305A800BA132E /* ApiEndpoint.swift */,
 			);
 			path = Data;
@@ -519,6 +522,7 @@
 				7648092D1E5A0B7E0072A173 /* AppDelegate.swift in Sources */,
 				7663A5491E5F44CA00BA132E /* ActivityCell.swift in Sources */,
 				7663A55C1E5F47A900BA132E /* FontPalette.swift in Sources */,
+				7663A58C1E63428100BA132E /* ApiRepository.swift in Sources */,
 				7648095E1E5A144A0072A173 /* InMemoryRepository.swift in Sources */,
 				7648096E1E5A31DF0072A173 /* ActivityDisplayData.swift in Sources */,
 				7663A5881E63394A00BA132E /* Result.swift in Sources */,

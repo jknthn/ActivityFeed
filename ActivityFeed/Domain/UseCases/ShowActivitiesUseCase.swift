@@ -29,13 +29,18 @@ class ShowActivitiesUseCase: UseCase {
         guard let range = rangeIterator.next() else {
             return
         }
-        entityGateway.getActivities(for: range) { [weak self] oldest, activities in
-            guard !activities.isEmpty else {
-                self?.execute()
-                return
+        entityGateway.getActivities(for: range) { result in
+            result.onSuccess { oldest, activities in
+                guard !activities.isEmpty else {
+                    self.execute()
+                    return
+                }
+                self.rangeIterator.changeOldestDate(to: oldest)
+                self.completion(activities.map(ActivityDisplayData.init).sorted { $0.0.timestamp > $0.1.timestamp })
             }
-            self?.rangeIterator.changeOldestDate(to: oldest)
-            self?.completion(activities.map(ActivityDisplayData.init).sorted { $0.0.timestamp > $0.1.timestamp })
+            result.onError { error in
+                assertionFailure("Error: \(error)") // TODO: - Handle error
+            }
         }
     }
 
