@@ -13,28 +13,24 @@ class InMemoryRepository: EntityGateway {
     private static let currentDate = Date()
     private static let acivities = [
         Activity(
-            id: "1234a",
             message: "This is first message",
             amount: 2.5,
             userId: 1,
             timestamp: dateBySubstractingDaysFromCurrent(amount: 20)
         ),
         Activity(
-            id: "3245f",
             message: "This is second message",
             amount: 41.0,
             userId: 2,
             timestamp: dateBySubstractingDaysFromCurrent(amount: 15)
         ),
         Activity(
-            id: "1234a",
             message: "This is third message",
             amount: 7.2,
             userId: 2,
             timestamp: dateBySubstractingDaysFromCurrent(amount: 10)
         ),
         Activity(
-            id: "1234a",
             message: "This is fourth message",
             amount: 10.2,
             userId: 1,

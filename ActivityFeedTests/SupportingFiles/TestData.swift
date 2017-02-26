@@ -10,8 +10,6 @@ import Foundation
 
 struct TestData {
     
-    static let mainId = "0123abcd"
-    static let altId = "4567efgh"
     static let mainMessage = "<strong>Something something</strong> something"
     static let altMessage = "Something something something"
     static let mainAmount = 1.4 as Float

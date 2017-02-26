@@ -8,18 +8,22 @@
 
 import Foundation
 
-struct Activity: Equatable {
+struct Activity: JsonParsable, Equatable {
     
-    let id: String
     let message: String
     let amount: Float
     let userId: Int
     let timestamp: Date
     
+    // MARK: - JsonParsable
+    
+    static func fromJson(json: JsonDictionary) -> Activity? {
+        return nil
+    }
+    
     // MARK: - Equatable
     
     static func ==(lhs: Activity, rhs: Activity) -> Bool {
-        if lhs.id != rhs.id { return false }
         if lhs.message != rhs.message { return false }
         if lhs.amount != rhs.amount { return false }
         if lhs.userId != rhs.userId { return false }

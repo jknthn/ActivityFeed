@@ -31,20 +31,8 @@ class ActivityTests: XCTestCase {
         XCTAssertEqual(activity, activity)
     }
     
-    func testNotEqualsIfDifferentId() {
-        let otherActivity = Activity(
-            id: TestData.altId,
-            message: TestData.mainMessage,
-            amount: TestData.mainAmount,
-            userId: TestData.mainUserId,
-            timestamp: TestData.mainTimestamp
-        )
-        XCTAssertNotEqual(activity, otherActivity)
-    }
-    
     func testNotEqualsIfDifferentMessage() {
         let otherActivity = Activity(
-            id: TestData.mainId,
             message: TestData.altMessage,
             amount: TestData.mainAmount,
             userId: TestData.mainUserId,
@@ -55,7 +43,6 @@ class ActivityTests: XCTestCase {
     
     func testNotEqualsIfDifferentAmount() {
         let otherActivity = Activity(
-            id: TestData.mainId,
             message: TestData.mainMessage,
             amount: TestData.altAmount,
             userId: TestData.mainUserId,
@@ -66,7 +53,6 @@ class ActivityTests: XCTestCase {
     
     func testNotEqualsIfDifferentUserId() {
         let otherActivity = Activity(
-            id: TestData.mainId,
             message: TestData.mainMessage,
             amount: TestData.mainAmount,
             userId: TestData.altUserId,
@@ -77,7 +63,6 @@ class ActivityTests: XCTestCase {
     
     func testNotEqualsIfDifferentTimestamp() {
         let otherActivity = Activity(
-            id: TestData.mainId,
             message: TestData.mainMessage,
             amount: TestData.mainAmount,
             userId: TestData.mainUserId,
