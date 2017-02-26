@@ -79,7 +79,8 @@ class ShowActivitiesUseCaseTests: XCTestCase {
 
         func getActivities(for range: Range<Date>, completion: @escaping (Result<(Date, [Activity]), Error>) -> Void) {
             self.range = range
-            completion(Result.success(minDate, activities))
+            let successTuple = (minDate, activities)
+            completion(Result.success(successTuple))
         }
     
     }
