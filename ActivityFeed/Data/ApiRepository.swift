@@ -14,3 +14,16 @@ enum ApiError: Error {
     case parse
 }
 
+class ApiRepository: EntityGateway {
+    
+    // MARK: - EntityGateway
+    
+    func getActivities(for range: Range<Date>, completion: @escaping (Result<ActivitiesResponse, Error>) -> Void) {
+        
+    }
+    
+    // MARK: - Utility
+    
+    
+}
+

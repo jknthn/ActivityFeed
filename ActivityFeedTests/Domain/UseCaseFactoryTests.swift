@@ -38,7 +38,7 @@ class UseCaseFactoryTest: XCTestCase {
     // MARK: - Mocks
     
     class EnitityGatewayMock: EntityGateway {
-        func getActivities(for range: Range<Date>, completion: @escaping (Result<(Date, [Activity]), Error>) -> Void) { }
+        func getActivities(for range: Range<Date>, completion: @escaping (Result<ActivitiesResponse, Error>) -> Void) { }
     }
     
 }

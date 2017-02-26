@@ -46,9 +46,9 @@ class InMemoryRepository: EntityGateway {
     
     // MARK: - EntityGateway
     
-    func getActivities(for range: Range<Date>, completion: @escaping (Result<(Date, [Activity]), Error>) -> Void) {
+    func getActivities(for range: Range<Date>, completion: @escaping (Result<ActivitiesResponse, Error>) -> Void) {
         let selectedActivities = InMemoryRepository.acivities.filter { range.contains($0.timestamp) }
         let oldestDate = InMemoryRepository.acivities.map { $0.timestamp }.sorted(by: <).first!
-        completion(Result.success(oldestDate, selectedActivities))
+        completion(Result.success(ActivitiesResponse(oldest: oldestDate, activities: selectedActivities)))
     }
 }
