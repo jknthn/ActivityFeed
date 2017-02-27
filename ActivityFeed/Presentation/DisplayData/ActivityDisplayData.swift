@@ -22,12 +22,11 @@ struct ActivityDisplayData: Equatable {
     }
     
     var date: String {
-        // TODO: - Inject Locale, Format output, use actual date
         return DateFormatter.app.string(from: activity.timestamp)
     }
     
-    var imageUrl: URL? {
-        return nil
+    var userId: Int {
+        return activity.userId
     }
     
     var timestamp: Double {

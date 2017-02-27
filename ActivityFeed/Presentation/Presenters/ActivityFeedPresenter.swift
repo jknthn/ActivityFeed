@@ -12,7 +12,7 @@ class ActivityFeedPresenter {
     
     private let factory: UseCaseFactory
     private var acitvities = [ActivityDisplayData]()
-    private var useCase: UseCase!
+    private var showActivitiesUseCase: UseCase!
     
     var view: ActivityFeedView?
     
@@ -29,26 +29,28 @@ class ActivityFeedPresenter {
     // MARK: - Public
     
     func viewReady() {
-        useCase = factory.createUseCase(for: .showActivities(completion: { activities in
+        showActivitiesUseCase = factory.createUseCase(for: .showActivities(completion: { activities in
             let currentCount = self.activitiesCount
             self.acitvities.append(contentsOf: activities)
             let newActivities = self.activitiesCount - currentCount
             if newActivities > 0 {
-                self.view?.reloadItems(at: currentCount...self.activitiesCount - 1)
+                self.view?.addItems(at: currentCount...self.activitiesCount - 1)
             }
         }))
-        useCase.execute()
+        showActivitiesUseCase.execute()
     }
     
     func setupCell(_ cell: ActivityCell, for row: Int) {
         cell.updateAmount(acitvities[row].amount)
         cell.updateMessage(acitvities[row].message)
         cell.updateDate(acitvities[row].date)
-        cell.updateImageUrl(acitvities[row].imageUrl)
+        factory.createUseCase(for: .getAvatar(id: acitvities[row].userId, completion: { url in
+            cell.updateImageUrl(url)
+        })).execute()
     }
     
     func loadMore() {
-        useCase.execute()
+        showActivitiesUseCase.execute()
     }
     
 }
