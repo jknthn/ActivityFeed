@@ -36,6 +36,7 @@ class ActivityFeedPresenter {
             if newActivities > 0 {
                 self.view?.addItems(at: currentCount...self.activitiesCount - 1)
             }
+            self.view?.finishLoading()
         }))
         showActivitiesUseCase.execute()
     }

@@ -37,6 +37,7 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.registerCellsWithClass(ActivityTableViewCell.self)
         tableView.allowsSelection = false
+        tableView.backgroundView = LoadingView()
     }
     
     // MARK: - UITableViewController
@@ -71,8 +72,8 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
 
     // MARK: - ActivityFeedView
     
-    func reloadView() {
-        tableView.reloadData()
+    func finishLoading() {
+        tableView.backgroundView = nil
     }
     
     func addItems(at range: CountableClosedRange<Int>) {
