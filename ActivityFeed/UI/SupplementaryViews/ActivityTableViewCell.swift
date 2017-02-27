@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ActivityTableViewCell: UITableViewCell, ActivityCell {
     
@@ -83,10 +84,16 @@ class ActivityTableViewCell: UITableViewCell, ActivityCell {
         ])
     }
     
+    // MARK: - Public
+    
+    func cancelImageDownload() {
+        avatarImageView.kf.cancelDownloadTask()
+    }
+    
     // MARK: - ActivityCell
     
     func updateImageUrl(_ url: URL) {
-        avatarImageView.load(from: url)
+        avatarImageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
     }
     
     func updateMessage(_ message: NSAttributedString) {

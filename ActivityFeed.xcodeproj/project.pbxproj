@@ -25,7 +25,6 @@
 		765F6EEB1E63F29B00A977C8 /* DateFormatter+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F6EEA1E63F29B00A977C8 /* DateFormatter+Shared.swift */; };
 		765F6EED1E63F6E500A977C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F6EEC1E63F6E500A977C8 /* User.swift */; };
 		765F6EEF1E643AA100A977C8 /* GetUserAvatarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F6EEE1E643AA100A977C8 /* GetUserAvatarUseCase.swift */; };
-		765F6EF11E64420A00A977C8 /* UIImage+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F6EF01E64420A00A977C8 /* UIImage+Load.swift */; };
 		7663A5311E5B5BDD00BA132E /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5301E5B5BDD00BA132E /* TestData.swift */; };
 		7663A5331E5B5D4600BA132E /* Activity+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5321E5B5D4600BA132E /* Activity+TestData.swift */; };
 		7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5341E5B5E0100BA132E /* ActivityDisplayData+TestData.swift */; };
@@ -49,6 +48,7 @@
 		7663A5881E63394A00BA132E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5871E63394A00BA132E /* Result.swift */; };
 		7663A58A1E633A0200BA132E /* JsonParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5891E633A0200BA132E /* JsonParsable.swift */; };
 		7663A58C1E63428100BA132E /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A58B1E63428100BA132E /* ApiRepository.swift */; };
+		89C83DE83ED8E379BC6D2E87 /* Pods_ActivityFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFEEE3ED7629B27B824B444 /* Pods_ActivityFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30244C215290529243010E1A /* Pods-ActivityFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityFeed/Pods-ActivityFeed.release.xcconfig"; sourceTree = "<group>"; };
+		5EFEEE3ED7629B27B824B444 /* Pods_ActivityFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		764809291E5A0B7E0072A173 /* ActivityFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7648092C1E5A0B7E0072A173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		764809331E5A0B7E0072A173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,7 +84,6 @@
 		765F6EEA1E63F29B00A977C8 /* DateFormatter+Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Shared.swift"; sourceTree = "<group>"; };
 		765F6EEC1E63F6E500A977C8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		765F6EEE1E643AA100A977C8 /* GetUserAvatarUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserAvatarUseCase.swift; sourceTree = "<group>"; };
-		765F6EF01E64420A00A977C8 /* UIImage+Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Load.swift"; sourceTree = "<group>"; };
 		7663A5241E5B5B5600BA132E /* ActivityFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7663A5281E5B5B5600BA132E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7663A52F1E5B5BDC00BA132E /* ActivityFeedTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActivityFeedTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -109,6 +110,7 @@
 		7663A5871E63394A00BA132E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		7663A5891E633A0200BA132E /* JsonParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParsable.swift; sourceTree = "<group>"; };
 		7663A58B1E63428100BA132E /* ApiRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
+		78FC2369F846AB3A74071598 /* Pods-ActivityFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityFeed/Pods-ActivityFeed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C83DE83ED8E379BC6D2E87 /* Pods_ActivityFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,12 +132,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ABE94D7B694369820E1D09A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EFEEE3ED7629B27B824B444 /* Pods_ActivityFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BA082EC52AF9A4CA237D4ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78FC2369F846AB3A74071598 /* Pods-ActivityFeed.debug.xcconfig */,
+				30244C215290529243010E1A /* Pods-ActivityFeed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		764809201E5A0B7E0072A173 = {
 			isa = PBXGroup;
 			children = (
 				7648092B1E5A0B7E0072A173 /* ActivityFeed */,
 				7663A5251E5B5B5600BA132E /* ActivityFeedTests */,
 				7648092A1E5A0B7E0072A173 /* Products */,
+				2BA082EC52AF9A4CA237D4ED /* Pods */,
+				0ABE94D7B694369820E1D09A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -346,7 +368,6 @@
 				7663A5591E5F46A100BA132E /* ColorPalette.swift */,
 				7663A55B1E5F47A900BA132E /* FontPalette.swift */,
 				7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */,
-				765F6EF01E64420A00A977C8 /* UIImage+Load.swift */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -430,9 +451,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7648093B1E5A0B7E0072A173 /* Build configuration list for PBXNativeTarget "ActivityFeed" */;
 			buildPhases = (
+				4042D44DCFD3F1905568D2C4 /* [CP] Check Pods Manifest.lock */,
 				764809251E5A0B7E0072A173 /* Sources */,
 				764809261E5A0B7E0072A173 /* Frameworks */,
 				764809271E5A0B7E0072A173 /* Resources */,
+				9E1C4355EB6ED1B77A99BD64 /* [CP] Embed Pods Frameworks */,
+				EEA66BA2BDC0984969692E50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -524,12 +548,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4042D44DCFD3F1905568D2C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E1C4355EB6ED1B77A99BD64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActivityFeed/Pods-ActivityFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA66BA2BDC0984969692E50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActivityFeed/Pods-ActivityFeed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		764809251E5A0B7E0072A173 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765F6EF11E64420A00A977C8 /* UIImage+Load.swift in Sources */,
 				765F6EEF1E643AA100A977C8 /* GetUserAvatarUseCase.swift in Sources */,
 				764809561E5A10D60072A173 /* ActivityFeedView.swift in Sources */,
 				7663A55E1E5F4D9700BA132E /* ReusableIdentifier.swift in Sources */,
@@ -695,6 +766,7 @@
 		};
 		7648093C1E5A0B7E0072A173 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78FC2369F846AB3A74071598 /* Pods-ActivityFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -709,6 +781,7 @@
 		};
 		7648093D1E5A0B7E0072A173 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30244C215290529243010E1A /* Pods-ActivityFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

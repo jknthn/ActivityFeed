@@ -61,6 +61,13 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
             presenter.loadMore()
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? ActivityTableViewCell else {
+            return
+        }
+        cell.cancelImageDownload()
+    }
 
     // MARK: - ActivityFeedView
     
@@ -71,7 +78,7 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
     func addItems(at range: CountableClosedRange<Int>) {
         let paths = range.map { IndexPath(row: $0, section: 0) }
         tableView.beginUpdates()
-        tableView.insertRows(at: paths, with: .left)
+        tableView.insertRows(at: paths, with: .none)
         tableView.endUpdates()
     }
 }

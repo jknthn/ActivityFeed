@@ -3,7 +3,7 @@
 ## 1. Project assumptions
 1. Project will follow Clean Architecture principles
 2. `Storyboards` and `xib`s will not be used, all views will be written from code
-3. No external libraries will be used
+3. `cocoapods` used as depencency management system
 
 NOTE: Clean Architecture is overkill for such project, wanted to showcase what I am currently into.
 
