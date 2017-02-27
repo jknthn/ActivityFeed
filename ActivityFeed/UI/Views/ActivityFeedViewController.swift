@@ -79,7 +79,7 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
     func addItems(at range: CountableClosedRange<Int>) {
         let paths = range.map { IndexPath(row: $0, section: 0) }
         tableView.beginUpdates()
-        tableView.insertRows(at: paths, with: .none)
+        tableView.insertRows(at: paths, with: .automatic)
         tableView.endUpdates()
     }
 }

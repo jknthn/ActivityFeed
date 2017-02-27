@@ -97,7 +97,7 @@ class ActivityTableViewCell: UITableViewCell, ActivityCell {
     }
     
     func updateMessage(_ message: String) {
-        messageLabel.text = message
+        messageLabel.attributedText = AttributedStringCreator(string: message).create()
     }
     
     func updateDate(_ date: String) {

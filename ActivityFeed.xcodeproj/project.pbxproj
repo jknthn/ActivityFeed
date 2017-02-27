@@ -50,6 +50,7 @@
 		7663A5881E63394A00BA132E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5871E63394A00BA132E /* Result.swift */; };
 		7663A58A1E633A0200BA132E /* JsonParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5891E633A0200BA132E /* JsonParsable.swift */; };
 		7663A58C1E63428100BA132E /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A58B1E63428100BA132E /* ApiRepository.swift */; };
+		76B90BEE1E6496E600F388C9 /* AttributedStringCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B90BED1E6496E600F388C9 /* AttributedStringCreator.swift */; };
 		89C83DE83ED8E379BC6D2E87 /* Pods_ActivityFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFEEE3ED7629B27B824B444 /* Pods_ActivityFeed.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,7 @@
 		7663A5871E63394A00BA132E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		7663A5891E633A0200BA132E /* JsonParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParsable.swift; sourceTree = "<group>"; };
 		7663A58B1E63428100BA132E /* ApiRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
+		76B90BED1E6496E600F388C9 /* AttributedStringCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringCreator.swift; sourceTree = "<group>"; };
 		78FC2369F846AB3A74071598 /* Pods-ActivityFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityFeed/Pods-ActivityFeed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -374,6 +376,7 @@
 				7663A5591E5F46A100BA132E /* ColorPalette.swift */,
 				7663A55B1E5F47A900BA132E /* FontPalette.swift */,
 				7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */,
+				76B90BED1E6496E600F388C9 /* AttributedStringCreator.swift */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				765F6EEF1E643AA100A977C8 /* GetUserAvatarUseCase.swift in Sources */,
+				76B90BEE1E6496E600F388C9 /* AttributedStringCreator.swift in Sources */,
 				764809561E5A10D60072A173 /* ActivityFeedView.swift in Sources */,
 				7663A55E1E5F4D9700BA132E /* ReusableIdentifier.swift in Sources */,
 				764809521E5A10B60072A173 /* ActivityFeedConnector.swift in Sources */,
