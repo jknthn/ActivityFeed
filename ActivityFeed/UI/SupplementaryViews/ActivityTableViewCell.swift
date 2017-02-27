@@ -18,6 +18,7 @@ class ActivityTableViewCell: UITableViewCell, ActivityCell {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.layer.cornerRadius = 15.0
+        imageView.clipsToBounds = true
         return imageView
     }()
     
@@ -55,6 +56,7 @@ class ActivityTableViewCell: UITableViewCell, ActivityCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        avatarImageView.image = nil
         messageLabel.attributedText = nil
         dateLabel.text = nil
         amountLabel.text = nil
@@ -84,7 +86,7 @@ class ActivityTableViewCell: UITableViewCell, ActivityCell {
     // MARK: - ActivityCell
     
     func updateImageUrl(_ url: URL) {
-        // TODO: - Assign image
+        avatarImageView.load(from: url)
     }
     
     func updateMessage(_ message: NSAttributedString) {
