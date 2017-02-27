@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     private lazy var rootConnector: ActivityFeedConnector = {
-        let entityGateway = InMemoryRepository()
+        let entityGateway = ApiRepository()
         let connector = ActivityFeedConnector(entityGateway: entityGateway)
         return connector
     }()
