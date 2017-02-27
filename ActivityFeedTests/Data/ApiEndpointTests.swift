@@ -23,4 +23,10 @@ class ApiEndpointTests: XCTestCase {
         let urlString = apiBaseUrlString + "/activities?from=\(formattedDate)&to=\(formattedDate)"
         XCTAssertEqual(url.absoluteString, urlString)
     }
+    
+    func testUsersEndpoint() {
+        let url = ApiEndpoint.users(id: TestData.mainUserId).url
+        let urlString = apiBaseUrlString + "/users/\(TestData.mainUserId)"
+        XCTAssertEqual(url.absoluteString, urlString)
+    }
 }

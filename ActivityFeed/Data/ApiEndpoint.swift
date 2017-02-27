@@ -10,6 +10,7 @@ import Foundation
 
 enum ApiEndpoint {
     case activities(range: Range<Date>)
+    case users(id: Int)
     
     static let apiUrl = URL(string: "http://qapital-ios-testtask.herokuapp.com")!
     
@@ -23,6 +24,8 @@ enum ApiEndpoint {
                 URLQueryItem(name: "to", value: DateFormatter.api.string(from: range.upperBound))
             ]
             return components.url!
+        case .users(let id):
+            return URL(string: ApiEndpoint.apiUrl.absoluteString + "/users/\(id)")!
         }
     }
 }
