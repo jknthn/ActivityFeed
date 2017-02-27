@@ -72,6 +72,7 @@ class ActivityTests: XCTestCase {
     }
     
     func testFromValidJson() {
+        // TODO: - There is problem with date formatting. No observed influence on app but in tests dates 12h different.
         let json = TestData.activityJson
         let jsonActivity = Activity.fromJson(json: json)!
         XCTAssertEqual(jsonActivity, activity)
