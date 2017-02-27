@@ -12,8 +12,8 @@ struct ActivityDisplayData: Equatable {
     
     private let activity: Activity
     
-    var message: NSAttributedString {
-        return NSAttributedString(string: activity.message)
+    var message: String {
+        return activity.message
     }
     
     var amount: String {

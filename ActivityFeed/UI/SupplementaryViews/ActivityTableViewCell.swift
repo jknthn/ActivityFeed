@@ -96,8 +96,8 @@ class ActivityTableViewCell: UITableViewCell, ActivityCell {
         avatarImageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
     }
     
-    func updateMessage(_ message: NSAttributedString) {
-        messageLabel.attributedText = message
+    func updateMessage(_ message: String) {
+        messageLabel.text = message
     }
     
     func updateDate(_ date: String) {
