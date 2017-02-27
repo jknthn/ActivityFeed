@@ -26,13 +26,14 @@
 		765F6EED1E63F6E500A977C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F6EEC1E63F6E500A977C8 /* User.swift */; };
 		765F6EEF1E643AA100A977C8 /* GetUserAvatarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F6EEE1E643AA100A977C8 /* GetUserAvatarUseCase.swift */; };
 		765F6EF31E648AF000A977C8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F6EF21E648AF000A977C8 /* LoadingView.swift */; };
+		765F6EF61E64959400A977C8 /* BentonSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 765F6EF41E64959400A977C8 /* BentonSans-Bold.otf */; };
+		765F6EF71E64959400A977C8 /* BentonSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 765F6EF51E64959400A977C8 /* BentonSans-Regular.otf */; };
 		7663A5311E5B5BDD00BA132E /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5301E5B5BDD00BA132E /* TestData.swift */; };
 		7663A5331E5B5D4600BA132E /* Activity+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5321E5B5D4600BA132E /* Activity+TestData.swift */; };
 		7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5341E5B5E0100BA132E /* ActivityDisplayData+TestData.swift */; };
 		7663A5471E5F3EA700BA132E /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5461E5F3EA700BA132E /* ActivityTableViewCell.swift */; };
 		7663A5491E5F44CA00BA132E /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5481E5F44CA00BA132E /* ActivityCell.swift */; };
 		7663A54C1E5F451700BA132E /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A54B1E5F451700BA132E /* LabelFactory.swift */; };
-		7663A5561E5F45D600BA132E /* BentonSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7663A5511E5F45D600BA132E /* BentonSans-Regular.otf */; };
 		7663A55A1E5F46A100BA132E /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5591E5F46A100BA132E /* ColorPalette.swift */; };
 		7663A55C1E5F47A900BA132E /* FontPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A55B1E5F47A900BA132E /* FontPalette.swift */; };
 		7663A55E1E5F4D9700BA132E /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */; };
@@ -86,6 +87,8 @@
 		765F6EEC1E63F6E500A977C8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		765F6EEE1E643AA100A977C8 /* GetUserAvatarUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserAvatarUseCase.swift; sourceTree = "<group>"; };
 		765F6EF21E648AF000A977C8 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		765F6EF41E64959400A977C8 /* BentonSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BentonSans-Bold.otf"; path = "ActivityFeed/Supporting Files/Fonts/BentonSans-Bold.otf"; sourceTree = SOURCE_ROOT; };
+		765F6EF51E64959400A977C8 /* BentonSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BentonSans-Regular.otf"; path = "ActivityFeed/Supporting Files/Fonts/BentonSans-Regular.otf"; sourceTree = SOURCE_ROOT; };
 		7663A5241E5B5B5600BA132E /* ActivityFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7663A5281E5B5B5600BA132E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7663A52F1E5B5BDC00BA132E /* ActivityFeedTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActivityFeedTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -95,7 +98,6 @@
 		7663A5461E5F3EA700BA132E /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		7663A5481E5F44CA00BA132E /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		7663A54B1E5F451700BA132E /* LabelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
-		7663A5511E5F45D600BA132E /* BentonSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BentonSans-Regular.otf"; path = "../../Fonts/BentonSans-Regular.otf"; sourceTree = "<group>"; };
 		7663A5591E5F46A100BA132E /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		7663A55B1E5F47A900BA132E /* FontPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontPalette.swift; sourceTree = "<group>"; };
 		7663A55D1E5F4D9700BA132E /* ReusableIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
@@ -359,7 +361,8 @@
 		7663A54D1E5F45D600BA132E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				7663A5511E5F45D600BA132E /* BentonSans-Regular.otf */,
+				765F6EF41E64959400A977C8 /* BentonSans-Bold.otf */,
+				765F6EF51E64959400A977C8 /* BentonSans-Regular.otf */,
 			);
 			name = Fonts;
 			path = Base.lproj/Fonts;
@@ -536,9 +539,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7663A5561E5F45D600BA132E /* BentonSans-Regular.otf in Resources */,
+				765F6EF71E64959400A977C8 /* BentonSans-Regular.otf in Resources */,
 				764809491E5A10070072A173 /* LaunchScreen.storyboard in Resources */,
 				764809341E5A0B7E0072A173 /* Assets.xcassets in Resources */,
+				765F6EF61E64959400A977C8 /* BentonSans-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
