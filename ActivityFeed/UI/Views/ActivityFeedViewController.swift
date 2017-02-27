@@ -74,10 +74,4 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
         tableView.insertRows(at: paths, with: .left)
         tableView.endUpdates()
     }
-    
-    func reloadItem(at row: Int) {
-        tableView.beginUpdates()
-        tableView.reloadRows(at: [IndexPath(row: row, section: 0)], with: .none)
-        tableView.endUpdates()
-    }
 }
