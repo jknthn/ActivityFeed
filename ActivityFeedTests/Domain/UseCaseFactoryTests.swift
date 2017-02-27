@@ -39,6 +39,7 @@ class UseCaseFactoryTest: XCTestCase {
     
     class EnitityGatewayMock: EntityGateway {
         func getActivities(for range: Range<Date>, completion: @escaping (Result<ActivitiesResponse, Error>) -> Void) { }
+        func getUser(for id: Int, completion: @escaping (Result<User, Error>) -> Void) { }
     }
     
 }

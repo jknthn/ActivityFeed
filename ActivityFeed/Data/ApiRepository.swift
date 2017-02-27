@@ -24,6 +24,10 @@ class ApiRepository: EntityGateway {
         }
     }
     
+    func getUser(for id: Int, completion: @escaping (Result<User, Error>) -> Void) {
+        
+    }
+    
     // MARK: - Utility
     
     private func get<T: JsonParsable>(_ endpoint: ApiEndpoint, completion: @escaping (Result<T, Error>) -> Void) {

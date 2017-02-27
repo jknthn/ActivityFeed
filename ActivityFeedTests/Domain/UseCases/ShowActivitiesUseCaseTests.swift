@@ -81,7 +81,8 @@ class ShowActivitiesUseCaseTests: XCTestCase {
             self.range = range
             completion(Result.success(ActivitiesResponse(oldest: minDate, activities: activities)))
         }
-    
+        
+        func getUser(for id: Int, completion: @escaping (Result<User, Error>) -> Void) { }
     }
     
 }

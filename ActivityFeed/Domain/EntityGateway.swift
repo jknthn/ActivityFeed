@@ -10,4 +10,5 @@ import Foundation
 
 protocol EntityGateway {
     func getActivities(for range: Range<Date>, completion: @escaping (Result<ActivitiesResponse, Error>) -> Void)
+    func getUser(for id: Int, completion: @escaping (Result<User, Error>) -> Void)
 }
