@@ -18,7 +18,6 @@ As I am really architecture focused programmer I am always happy to discuss such
 ## 3. Would improve
 1. Clean up code
 2. Add more tests
-3. Fix failing test due to date formatting `ActivityTests -> testFromValidJson()`
-4. Handle errors
-5. Add activity indicators
-6. Beautify - animations, tweaks, etc.
+3. Handle errors
+4. Add activity indicators
+5. Beautify - animations, tweaks, etc.
