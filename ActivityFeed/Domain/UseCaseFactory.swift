@@ -12,6 +12,7 @@ class UseCaseFactory {
     
     enum Use {
         case showActivities(completion: ShowActivitiesCompletion)
+        case getAvatar(id: Int, completion: GetUserAvatarCompletion)
     }
     
     private let entityGateway: EntityGateway
@@ -28,6 +29,8 @@ class UseCaseFactory {
         switch use {
         case .showActivities(let completion):
             return ShowActivitiesUseCase(entityGateway: entityGateway, completion: completion)
+        case .getAvatar(let id, let completion):
+            return GetUserAvatarUseCase(id: id, entityGateway: entityGateway, completion: completion)
         }
     }
     
