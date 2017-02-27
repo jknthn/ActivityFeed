@@ -17,7 +17,8 @@ As I am really architecture focused programmer I am always happy to discuss such
 
 ## 3. Would improve
 1. Clean up code
-2. Add more tests
+2. Add more tests (almost 40% tested at this moment)
 3. Handle errors
 4. Add activity indicators
 5. Beautify - animations, tweaks, etc.
+6. Format date like to designs
