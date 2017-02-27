@@ -70,6 +70,8 @@ class ActivityFeedViewController: UITableViewController, ActivityFeedView {
     
     func reloadItems(at range: CountableClosedRange<Int>) {
         let paths = range.map { IndexPath(row: $0, section: 0) }
+        tableView.beginUpdates()
         tableView.insertRows(at: paths, with: .left)
+        tableView.endUpdates()
     }
 }
