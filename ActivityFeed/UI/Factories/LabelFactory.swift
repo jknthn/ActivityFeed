@@ -39,6 +39,7 @@ class LabelFactory {
     
     private func messageLabel(from label: UILabel) -> UILabel {
         label.font = FontPalette.primary
+        label.numberOfLines = 0
         return label
     }
     
