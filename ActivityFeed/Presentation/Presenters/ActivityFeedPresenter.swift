@@ -30,10 +30,14 @@ class ActivityFeedPresenter {
     
     func viewReady() {
         useCase = factory.createUseCase(for: .showActivities(completion: { activities in
+            let currentCount = self.activitiesCount
             self.acitvities.append(contentsOf: activities)
+            let newActivities = self.activitiesCount - currentCount
+            if newActivities > 0 {
+                self.view?.reloadItems(at: currentCount...self.activitiesCount - 1)
+            }
         }))
         useCase.execute()
-        view?.reloadView()
     }
     
     func setupCell(_ cell: ActivityCell, for row: Int) {
@@ -44,13 +48,7 @@ class ActivityFeedPresenter {
     }
     
     func loadMore() {
-        let currentCount = activitiesCount
         useCase.execute()
-        let newActivities = activitiesCount - currentCount
-        if newActivities > 0 {
-            view?.reloadItems(at: currentCount...activitiesCount - 1)            
-        }
     }
-    
     
 }
