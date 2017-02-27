@@ -22,7 +22,7 @@ struct TestData {
         "message": mainMessage as AnyObject,
         "amount": mainAmount as AnyObject,
         "userId": mainUserId as AnyObject,
-        "timestamp": ISO8601DateFormatter().string(from: mainTimestamp) as AnyObject
+        "timestamp": DateFormatter.api.string(from: mainTimestamp) as AnyObject
     ]
     
 }

@@ -16,12 +16,11 @@ enum ApiEndpoint {
     var url: URL {
         switch self {
         case .activities(let range):
-            let formatter = ISO8601DateFormatter()
             var components = URLComponents(url: ApiEndpoint.apiUrl, resolvingAgainstBaseURL: true)!
             components.path = "/activities"
             components.queryItems = [
-                URLQueryItem(name: "from", value: formatter.string(from: range.lowerBound)),
-                URLQueryItem(name: "to", value: formatter.string(from: range.lowerBound))
+                URLQueryItem(name: "from", value: DateFormatter.api.string(from: range.lowerBound)),
+                URLQueryItem(name: "to", value: DateFormatter.api.string(from: range.upperBound))
             ]
             return components.url!
         }

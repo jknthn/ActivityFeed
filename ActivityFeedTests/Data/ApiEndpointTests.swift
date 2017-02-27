@@ -19,7 +19,7 @@ class ApiEndpointTests: XCTestCase {
         let date = Date()
         let range = Range(uncheckedBounds: (lower: date, upper: date))
         let url = ApiEndpoint.activities(range: range).url
-        let formattedDate = ISO8601DateFormatter().string(from: date)
+        let formattedDate = DateFormatter.api.string(from: date)
         let urlString = apiBaseUrlString + "/activities?from=\(formattedDate)&to=\(formattedDate)"
         XCTAssertEqual(url.absoluteString, urlString)
     }

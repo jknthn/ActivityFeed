@@ -22,6 +22,7 @@
 		7648096B1E5A313C0072A173 /* ShowActivitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648096A1E5A313C0072A173 /* ShowActivitiesUseCase.swift */; };
 		7648096E1E5A31DF0072A173 /* ActivityDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648096D1E5A31DF0072A173 /* ActivityDisplayData.swift */; };
 		765F6EE91E63486D00A977C8 /* ActivitiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F6EE81E63486D00A977C8 /* ActivitiesResponse.swift */; };
+		765F6EEB1E63F29B00A977C8 /* DateFormatter+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F6EEA1E63F29B00A977C8 /* DateFormatter+Shared.swift */; };
 		7663A5311E5B5BDD00BA132E /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5301E5B5BDD00BA132E /* TestData.swift */; };
 		7663A5331E5B5D4600BA132E /* Activity+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5321E5B5D4600BA132E /* Activity+TestData.swift */; };
 		7663A5351E5B5E0100BA132E /* ActivityDisplayData+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A5341E5B5E0100BA132E /* ActivityDisplayData+TestData.swift */; };
@@ -75,6 +76,7 @@
 		7648096A1E5A313C0072A173 /* ShowActivitiesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowActivitiesUseCase.swift; sourceTree = "<group>"; };
 		7648096D1E5A31DF0072A173 /* ActivityDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDisplayData.swift; sourceTree = "<group>"; };
 		765F6EE81E63486D00A977C8 /* ActivitiesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesResponse.swift; sourceTree = "<group>"; };
+		765F6EEA1E63F29B00A977C8 /* DateFormatter+Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Shared.swift"; sourceTree = "<group>"; };
 		7663A5241E5B5B5600BA132E /* ActivityFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7663A5281E5B5B5600BA132E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7663A52F1E5B5BDC00BA132E /* ActivityFeedTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActivityFeedTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				7663A5791E62EE6E00BA132E /* Date+Subtract.swift */,
+				765F6EEA1E63F29B00A977C8 /* DateFormatter+Shared.swift */,
 				7663A57E1E62F2D100BA132E /* DateRangeIterator.swift */,
 				7663A5871E63394A00BA132E /* Result.swift */,
 				7663A5891E633A0200BA132E /* JsonParsable.swift */,
@@ -520,6 +523,7 @@
 				764809561E5A10D60072A173 /* ActivityFeedView.swift in Sources */,
 				7663A55E1E5F4D9700BA132E /* ReusableIdentifier.swift in Sources */,
 				764809521E5A10B60072A173 /* ActivityFeedConnector.swift in Sources */,
+				765F6EEB1E63F29B00A977C8 /* DateFormatter+Shared.swift in Sources */,
 				7648094C1E5A10760072A173 /* ActivityFeedViewController.swift in Sources */,
 				7663A54C1E5F451700BA132E /* LabelFactory.swift in Sources */,
 				7648092D1E5A0B7E0072A173 /* AppDelegate.swift in Sources */,

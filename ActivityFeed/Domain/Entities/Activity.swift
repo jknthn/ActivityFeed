@@ -18,13 +18,12 @@ struct Activity: JsonParsable, Equatable {
     // MARK: - JsonParsable
     
     static func fromJson(json: JsonDictionary) -> Activity? {
-        let formatter = ISO8601DateFormatter()
         guard
             let message = json["message"] as? String,
             let amount = json["amount"] as? Float,
             let userId = json["userId"] as? Int,
             let timestampRaw = json["timestamp"] as? String,
-            let timestamp = formatter.date(from: timestampRaw)
+            let timestamp = DateFormatter.api.date(from: timestampRaw)
         else {
             return nil
         }

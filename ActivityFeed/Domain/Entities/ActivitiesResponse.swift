@@ -16,10 +16,9 @@ struct ActivitiesResponse: JsonParsable {
     // MARK: - JsonParsable
     
     static func fromJson(json: JsonDictionary) -> ActivitiesResponse? {
-        let formatter = ISO8601DateFormatter()
         guard
             let oldestRaw = json["oldest"] as? String,
-            let oldest = formatter.date(from: oldestRaw),
+            let oldest = DateFormatter.api.date(from: oldestRaw),
             let activitiesJson = json["activities"] as? [JsonDictionary]
         else {
             return nil
